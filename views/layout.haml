@@ -2,9 +2,10 @@
 %html
   %head
     %title Hash It
+    %link{:rel => "stylesheet", :href => "hashit.css", :type => "text/css"}
   %body
     %h1 Hash It
     = yield
   #footer
-  %a.github{:href => "https://github.com/danabr/hashit"}
-    Github
+    %p
+      %a.github{:href => "https://github.com/danabr/hashit"} Github
