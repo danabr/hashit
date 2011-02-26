@@ -1,0 +1,12 @@
+%p
+  There you go, hashed and ready.
+%p
+  %a{:href => "/"} Hash something else
+%table.results
+  %tr
+    %th Algorithm
+    %th Hash
+    - @results.each do |name, hash|
+      %tr
+        %td= name
+        %td= hash
